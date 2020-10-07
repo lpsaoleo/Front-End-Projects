@@ -9,6 +9,7 @@ body{
     height: 500px;
     background-position: right center;
     background-size: cover;
+    border-top: 1px solid transparent; /*Para remover a quebra da margem superior*/
 }
 
 .hero-content{
@@ -23,15 +24,80 @@ body{
     text-shadow: 2px 2px 2px #333;
 }
 
+.hero-content a{
+    background-color: rgba(0,0,0,.6);
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    text-decoration: none;
+    color: white;
+}
+
+.hero-content a:hover{
+    background: rgba(0,0,0,0.2);
+}
+
+.hero nav ul{
+    text-align: right;
+    margin: 20px 30px 0 0;
+}
+
+.hero-li{
+    display:inline-block;
+    list-style: none;
+    border: 1px solid white;
+}
+
+.hero nav a{
+    background: rgba(0,0,0,0.3); /*Define a transparência do conteúdo*/
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.hero nav a:hover{
+    background: rgba(0,0,0,0.2); /*Define a transparência do conteúdo durante o hover do mouse sobre o botao*/
+}
+
 main{
     width: 80%;
     margin: auto;
 }
 
-.content-section{
+.content-section, .content-section-card{
     background-color: white;
     padding: 15px;
     margin-top: 15px;
+
+}
+
+.card{
+    display: inline-block;
+}
+
+.card p{
+    background-color: rgb(97, 95, 95);
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+
+}
+
+.content-header{
+    background-color: rgb(201, 201, 201);
+    border-bottom-color: rgb(102, 102, 102);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    text-align: center;
+    height: 50px;
+    line-height: 50px; /*line height na mesma altura da caixa para centralizar */
 }
 
 footer{

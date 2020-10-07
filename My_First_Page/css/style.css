@@ -33,3 +33,16 @@ main{
     padding: 15px;
     margin-top: 15px;
 }
+
+footer{
+    background-color: rgb(95, 95, 95);
+    margin-bottom: 0;
+    height: 80px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    line-height: 80px; /*line height na mesma altura da caixa para centralizar */
+}
